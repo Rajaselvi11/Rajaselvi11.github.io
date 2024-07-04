@@ -187,6 +187,10 @@ nav ul li a:hover::after{
 }
 
 /*-----------css for small screen----------*/
+nav .fa-solid{
+    display: none;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 600px) {
     #header {
@@ -246,4 +250,29 @@ nav ul li a:hover::after{
         flex-basis: 100%;
         text-align: center;
     }
+
+    nav .fa-solid{
+    display: block;
+    font-size: 25px;
+    }
+    nav ul{
+        background: red;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
 }
+    
